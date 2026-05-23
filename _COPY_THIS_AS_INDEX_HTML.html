@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strong Island Landscaping &amp; Irrigation — Suffolk County, NY</title>
+  <meta name="description" content="Strong Island Landscaping &amp; Irrigation — a husband-and-wife crew serving Suffolk County, NY. Full-service irrigation, lawn maintenance, spring &amp; fall clean-ups, mulch, snow removal. Licensed, insured, 24-hour emergency line." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Archivo:wght@400;500;600;800&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --ink:        oklch(22% 0.02 148);
+  --ink-soft:   oklch(40% 0.03 148);
+  --paper:      oklch(96.5% 0.012 95);
+  --paper-2:    oklch(93% 0.018 95);
+  --line:       oklch(85% 0.02 95);
+  --leaf:       oklch(55% 0.14 148);
+  --leaf-pale:  oklch(92% 0.06 148);
+  --leaf-deep:  oklch(30% 0.07 148);
+  --rust:       oklch(52% 0.14 42);
+  --sun:        oklch(82% 0.11 85);
+  --sun-soft:   oklch(92% 0.06 85);
+  --slab:    "Ultra", Georgia, serif;
+  --body:    "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script:  "Shadows Into Light Two", cursive;
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--body);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg { max-width: 100%; display: block; }
+a { color: var(--leaf-deep); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--rust); }
+strong { font-weight: 800; }
+u { text-decoration-color: var(--rust); text-underline-offset: 4px; text-decoration-thickness: 3px; }
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-md) var(--space-xl);
+  background: var(--leaf-deep);
+  color: var(--paper);
+}
+.mark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--paper);
+  text-decoration: none;
+}
+.mark:hover { color: var(--paper); }
+.mark-drop {
+  width: 32px;
+  height: 40px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px oklch(20% 0.04 148 / 0.3));
+  transition: transform .2s;
+}
+.mark:hover .mark-drop { transform: scale(1.08); }
+.mark-word {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: oklch(82% 0.04 148);
+}
+.masthead-nav {
+  display: flex;
+  gap: var(--space-lg);
+  margin-left: auto;
+}
+.masthead-nav a {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: oklch(85% 0.03 148);
+  padding: var(--space-xs) 0;
+  position: relative;
+}
+.masthead-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 2px;
+  background: var(--leaf);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+.masthead-nav a:hover { color: var(--paper); }
+.masthead-nav a:hover::after { transform: scaleX(1); }
+.masthead-call {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--paper);
+  text-decoration: none;
+}
+.masthead-call:hover { color: var(--paper); }
+.masthead-call-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: oklch(75% 0.05 148);
+}
+.masthead-call-num {
+  font-family: var(--slab);
+  font-size: 18px;
+  color: var(--leaf);
+}
+.hero {
+  padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: var(--space-lg) var(--space-3xl);
+}
+.hero-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.hero-title {
+  grid-column: 1;
+  font-family: var(--slab);
+  font-size: clamp(56px, 9vw, 120px);
+  line-height: 0.92;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hero-line-2 { color: var(--rust); }
+.hero-scribble {
+  display: block;
+  font-family: var(--script);
+  font-size: clamp(18px, 2.5vw, 26px);
+  color: var(--leaf);
+  transform: rotate(-2.5deg);
+  margin-top: var(--space-md);
+  letter-spacing: 0;
+}
+.trailer {
+  grid-column: 2;
+  grid-row: 2 / 5;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  max-width: 440px;
+  transform: rotate(2deg);
+  animation: float-in 0.8s ease-out both;
+}
+@keyframes float-in {
+  from { opacity: 0; transform: rotate(2deg) translateY(30px); }
+  to   { opacity: 1; transform: rotate(2deg) translateY(0); }
+}
+.trailer-frame {
+  background: oklch(99% 0.005 95);
+  padding: 12px 12px 48px;
+  box-shadow:
+    0 1px 0 oklch(88% 0.01 95),
+    0 20px 50px oklch(30% 0.04 148 / 0.2),
+    0 40px 80px oklch(30% 0.04 148 / 0.1);
+  overflow: hidden;
+}
+.trailer-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.trailer figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--space-md) 14px 0;
+}
+.trailer-hand {
+  font-family: var(--script);
+  font-size: 22px;
+  color: var(--ink);
+}
+.trailer-meta {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.hero-lead {
+  grid-column: 1;
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 58ch;
+  line-height: 1.65;
+}
+.hero-cta {
+  grid-column: 1;
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--leaf-deep);
+  color: var(--paper);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 4px 4px 0 var(--leaf);
+  transition: transform .15s, box-shadow .15s;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: var(--paper);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--leaf);
+}
+.btn-ghost {
+  font-family: var(--slab);
+  font-size: 18px;
+  color: var(--leaf-deep);
+  border-bottom: 2px solid var(--leaf);
+  padding-bottom: 2px;
+}
+.btn-ghost:hover {
+  color: var(--rust);
+  border-color: var(--rust);
+}
+.hero-stats {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+}
+.hero-stats dt {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  order: 2;
+  margin-top: 2px;
+}
+.hero-stats dd {
+  margin: 0;
+  font-family: var(--slab);
+  font-size: 28px;
+  color: var(--ink);
+  order: 1;
+}
+.hero-stats dd span {
+  font-size: 14px;
+  color: var(--sun);
+  margin-left: var(--space-xs);
+  letter-spacing: 2px;
+}
+.marquee {
+  background: var(--leaf-deep);
+  overflow: hidden;
+  padding: var(--space-md) 0;
+}
+.marquee-track {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+.marquee-track span {
+  font-family: var(--slab);
+  font-size: clamp(14px, 1.8vw, 20px);
+  color: var(--paper);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.marquee-track em {
+  font-style: normal;
+  color: var(--leaf);
+  font-size: 10px;
+}
+@keyframes scroll {
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+.section-head {
+  margin-bottom: var(--space-2xl);
+  max-width: 720px;
+}
+.section-head.align-left { text-align: left; }
+.chapter {
+  display: inline-block;
+  font-family: var(--script);
+  font-size: 24px;
+  color: var(--rust);
+  margin-bottom: var(--space-sm);
+}
+.chapter.light { color: var(--sun); }
+.section-head h2 {
+  font-family: var(--slab);
+  font-size: clamp(34px, 5vw, 60px);
+  line-height: 1.05;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.section-head h2 span { display: block; }
+.section-head h2 .soft { color: var(--ink-soft); }
+.section-head p {
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 56ch;
+  margin-top: var(--space-md);
+}
+.services {
+  padding: var(--space-4xl) var(--space-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  counter-reset: none;
+}
+.menu li {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: var(--space-lg);
+  align-items: baseline;
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--line);
+  transition: background .25s, padding-left .2s;
+}
+.menu li:first-child { border-top: 1px solid var(--line); }
+.menu li:hover {
+  background: var(--leaf-pale);
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+.menu-n {
+  font-family: var(--slab);
+  font-size: 32px;
+  color: var(--sun);
+  line-height: 1;
+  transition: transform .2s;
+}
+.menu li:hover .menu-n { transform: translateX(-4px); }
+.menu-body h3 {
+  font-family: var(--slab);
+  font-size: clamp(22px, 2.8vw, 32px);
+  color: var(--ink);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+.menu-body p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  max-width: 54ch;
+  line-height: 1.6;
+}
+.footnote {
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-top: var(--space-xl);
+}
+.footnote a { text-decoration: underline; text-underline-offset: 3px; }
+.story {
+  padding: var(--space-4xl) var(--space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-3xl);
+  align-items: start;
+  margin-top: var(--space-xl);
+}
+.pullquote {
+  position: relative;
+  padding: var(--space-2xl) var(--space-xl);
+  background: var(--leaf-deep);
+  color: var(--paper);
+  transform: rotate(-1deg);
+  box-shadow: 6px 6px 0 var(--sun);
+}
+.pq-mark {
+  position: absolute;
+  top: -12px;
+  left: var(--space-lg);
+  font-family: var(--slab);
+  font-size: 100px;
+  line-height: 1;
+  color: var(--leaf);
+  opacity: 0.5;
+}
+.pullquote p {
+  font-family: var(--slab);
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.25;
+  margin: 0;
+  position: relative;
+}
+.pullquote em { font-style: italic; color: var(--leaf); }
+.pullquote cite {
+  display: block;
+  margin-top: var(--space-lg);
+  font-family: var(--body);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: oklch(80% 0.05 148);
+}
+.story-copy h2 {
+  font-family: var(--slab);
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.08;
+  color: var(--ink);
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.01em;
+}
+.story-copy p {
+  color: var(--ink-soft);
+  font-size: 16px;
+  max-width: 56ch;
+  margin-bottom: var(--space-md);
+}
+.facts {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px dashed var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg) var(--space-xl);
+}
+.facts div { display: flex; flex-direction: column; }
+.facts dt {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 2px;
+}
+.facts dd {
+  margin: 0;
+  font-family: var(--slab);
+  font-size: 18px;
+  color: var(--ink);
+}
+.voices {
+  padding: var(--space-4xl) var(--space-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+.note {
+  margin: 0;
+  padding: var(--space-xl) var(--space-lg);
+  background: oklch(99% 0.005 95);
+  border: 2px solid var(--line);
+  position: relative;
+  transition: transform .3s, box-shadow .3s;
+}
+.note:nth-child(even) { transform: rotate(0.8deg); }
+.note:nth-child(odd) { transform: rotate(-0.6deg); }
+.note:hover {
+  transform: rotate(0deg) translateY(-4px) !important;
+  box-shadow: 0 16px 40px oklch(30% 0.04 148 / 0.15);
+  z-index: 2;
+}
+.note-stars {
+  font-size: 14px;
+  color: var(--sun);
+  letter-spacing: 3px;
+  margin-bottom: var(--space-md);
+}
+.note blockquote {
+  margin: 0 0 var(--space-lg);
+  font-family: var(--slab);
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.note .sig {
+  display: block;
+  font-family: var(--script);
+  font-size: 26px;
+  color: var(--rust);
+  line-height: 1;
+}
+.note-job {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: var(--space-xs);
+}
+.reach {
+  padding: var(--space-5xl) var(--space-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.reach .chapter { margin-bottom: var(--space-md); }
+.reach-title {
+  font-family: var(--slab);
+  font-size: clamp(36px, 6vw, 72px);
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -0.02em;
+}
+.reach-title span { display: block; }
+.reach-title .soft { color: var(--ink-soft); }
+.big-number {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--slab);
+  font-size: clamp(48px, 10vw, 120px);
+  color: var(--leaf-deep);
+  letter-spacing: -0.02em;
+  transition: color .2s;
+  text-decoration: none;
+  line-height: 1;
+}
+.big-number:hover { color: var(--rust); }
+.big-number em {
+  font-style: normal;
+  color: var(--sun);
+  font-size: 0.5em;
+}
+.reach-facts {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2xl);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.reach-facts > div { text-align: center; }
+.rf-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 2px;
+}
+.rf-value {
+  font-family: var(--slab);
+  font-size: 16px;
+  color: var(--ink);
+}
+.colophon {
+  background: var(--leaf-deep);
+  color: oklch(85% 0.03 148);
+  padding: var(--space-2xl) var(--space-xl);
+}
+.colophon-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+.col-mark {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+.col-drop {
+  width: 36px;
+  height: 45px;
+  flex-shrink: 0;
+}
+.col-mark strong {
+  font-family: var(--slab);
+  font-size: 18px;
+  color: var(--paper);
+  display: block;
+}
+.col-mark span {
+  font-size: 12px;
+  color: oklch(75% 0.04 148);
+}
+.col-meta {
+  display: flex;
+  gap: var(--space-lg);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title     { animation: fade-up 0.6s ease-out both; }
+.hero-lead      { animation: fade-up 0.6s 0.15s ease-out both; }
+.hero-cta       { animation: fade-up 0.6s 0.3s ease-out both; }
+.hero-stats     { animation: fade-up 0.6s 0.45s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-title, .hero-lead, .hero-cta, .hero-stats, .trailer {
+    animation: none !important;
+  }
+}
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-lg);
+  }
+  .trailer {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: center;
+    max-width: 380px;
+    margin: var(--space-lg) 0;
+  }
+  .story-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  .pullquote {
+    transform: none;
+    box-shadow: 4px 4px 0 var(--sun);
+  }
+  .notes { grid-template-columns: 1fr 1fr; }
+  .note:nth-child(even),
+  .note:nth-child(odd) { transform: none; }
+}
+@media (max-width: 640px) {
+  .masthead {
+    flex-wrap: wrap;
+    padding: var(--space-sm) var(--space-md);
+    gap: var(--space-sm);
+  }
+  .masthead-nav {
+    order: 3;
+    width: 100%;
+    gap: var(--space-md);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: var(--space-sm) 0;
+    border-top: 1px solid oklch(35% 0.05 148);
+  }
+  .masthead-nav a { white-space: nowrap; }
+  .hero { padding: var(--space-xl) var(--space-md); }
+  .hero-title { font-size: 52px; }
+  .services { padding: var(--space-3xl) var(--space-md); }
+  .menu li { grid-template-columns: 48px 1fr; gap: var(--space-md); }
+  .menu-n { font-size: 24px; }
+  .story { padding: var(--space-3xl) var(--space-md); }
+  .pullquote { padding: var(--space-xl) var(--space-md); }
+  .pullquote p { font-size: 22px; }
+  .pq-mark { font-size: 72px; top: -8px; left: var(--space-md); }
+  .voices { padding: var(--space-3xl) var(--space-md); }
+  .notes { grid-template-columns: 1fr; }
+  .reach { padding: var(--space-3xl) var(--space-md); }
+  .big-number { font-size: 48px; }
+  .reach-facts { gap: var(--space-lg); }
+  .col-meta { gap: var(--space-md); }
+}
+@media (max-width: 420px) {
+  .hero-title { font-size: 42px; }
+  .section-head h2 { font-size: 30px; }
+  .reach-title { font-size: 32px; }
+}
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <a class="mark" href="#top" aria-label="Strong Island Landscaping home">
+      <svg class="mark-drop" viewBox="0 0 80 100" aria-hidden="true">
+        <defs>
+          <clipPath id="drop-clip">
+            <path d="M40 4 C40 4, 6 50, 6 66 A34 34 0 0 0 74 66 C74 50, 40 4, 40 4Z"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#drop-clip)">
+          <rect width="80" height="100" fill="oklch(55% 0.14 148)"/>
+          <ellipse cx="40" cy="48" rx="32" ry="28" fill="oklch(62% 0.16 148)"/>
+          <ellipse cx="30" cy="42" rx="22" ry="18" fill="oklch(68% 0.18 148)"/>
+          <ellipse cx="50" cy="44" rx="16" ry="14" fill="oklch(72% 0.15 148)"/>
+          <ellipse cx="36" cy="52" rx="10" ry="8" fill="oklch(58% 0.10 148)"/>
+          <path d="M6 68 Q20 60 40 70 T74 68 V100 H6Z" fill="oklch(42% 0.08 55)"/>
+          <path d="M6 76 Q30 68 54 78 T74 76 V100 H6Z" fill="oklch(52% 0.14 42)"/>
+          <circle cx="18" cy="82" r="3" fill="oklch(48% 0.06 55)"/>
+          <circle cx="28" cy="86" r="2.5" fill="oklch(46% 0.07 55)"/>
+          <circle cx="38" cy="83" r="3.5" fill="oklch(50% 0.05 55)"/>
+          <circle cx="50" cy="85" r="2" fill="oklch(44% 0.08 55)"/>
+          <circle cx="58" cy="82" r="3" fill="oklch(47% 0.06 55)"/>
+        </g>
+        <path d="M40 4 C40 4, 6 50, 6 66 A34 34 0 0 0 74 66 C74 50, 40 4, 40 4Z" fill="none" stroke="oklch(55% 0.14 148)" stroke-width="3"/>
+        <path d="M18 42 Q28 30 38 20" fill="none" stroke="oklch(92% 0.06 148)" stroke-width="2" opacity=".4" stroke-linecap="round"/>
+      </svg>
+      <span class="mark-word">Strong Island</span>
+    </a>
+    <nav class="masthead-nav" aria-label="Primary">
+      <a href="#services">The Menu</a>
+      <a href="#story">The Crew</a>
+      <a href="#voices">Word on the Block</a>
+      <a href="#reach">Reach Us</a>
+    </nav>
+    <a class="masthead-call" href="tel:+16316394510">
+      <span class="masthead-call-label">24&#8201;hr line</span>
+      <span class="masthead-call-num">631.639.4510</span>
+    </a>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-meta" aria-hidden="true">
+        <span>&#8212; Est. on the Island &#8212;</span>
+        <span>Suffolk Co &#183; NY</span>
+        <span>Lic &amp; Ins</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-line-1">Your yard,</span>
+        <span class="hero-line-2">in <u>better</u></span>
+        <span class="hero-line-3">hands.</span>
+        <span class="hero-scribble" aria-hidden="true">
+          &#8212; that&#8217;s a promise, not a slogan
+        </span>
+      </h1>
+
+      <figure class="trailer">
+        <div class="trailer-frame">
+          <img
+            src="images/strong-island-trailer.jpg"
+            alt="Strong Island Irrigation trailer with green hand-painted lettering parked in a driveway"
+            loading="eager"
+            onerror="this.replaceWith(document.getElementById('trailer-svg').content.cloneNode(true));" />
+        </div>
+        <figcaption>
+          <span class="trailer-hand">&#8220;the rig.&#8221;</span>
+          <span class="trailer-meta">spring &#8217;24 &#183; south shore</span>
+        </figcaption>
+      </figure>
+
+      <template id="trailer-svg">
+        <svg viewBox="0 0 600 600" role="img" aria-label="Illustration of the Strong Island Irrigation trailer" style="width:100%;height:100%;display:block;">
+          <rect width="600" height="600" fill="#d5ddc8"/>
+          <path d="M0 440 Q150 410 300 440 T600 440 V600 H0Z" fill="#3b6634"/>
+          <path d="M0 470 Q150 455 300 470 T600 470 V600 H0Z" fill="#2d4f29" opacity=".7"/>
+          <g transform="translate(70 200)">
+            <rect x="0" y="20" width="460" height="220" rx="8" fill="#141414"/>
+            <rect x="10" y="30" width="440" height="200" rx="4" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+            <text x="230" y="96" text-anchor="middle" font-family="Ultra, serif" font-size="46" fill="#5ba84e">STRONG ISLAND</text>
+            <text x="230" y="148" text-anchor="middle" font-family="Ultra, serif" font-size="40" fill="#5ba84e">IRRIGATION</text>
+            <line x1="40" y1="170" x2="420" y2="170" stroke="#5ba84e" stroke-width="1" opacity=".5"/>
+            <text x="230" y="205" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="600" font-size="22" fill="#7ec970">631 &#183; 639 &#183; 4510</text>
+            <circle cx="110" cy="270" r="34" fill="#1a1a1a" stroke="#ccc" stroke-width="5"/>
+            <circle cx="110" cy="270" r="12" fill="#555"/>
+            <circle cx="350" cy="270" r="34" fill="#1a1a1a" stroke="#ccc" stroke-width="5"/>
+            <circle cx="350" cy="270" r="12" fill="#555"/>
+          </g>
+        </svg>
+      </template>
+
+      <p class="hero-lead">
+        We&#8217;re Chris &amp; Nykki. We run Strong Island Landscaping &amp;
+        Irrigation out of Suffolk County &#8212; a husband-and-wife crew that
+        answers the phone, shows up when we say we will, and treats every
+        yard the way we&#8217;d want ours done.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn-primary" href="tel:+16316394510">
+          Call the 24&#8201;hr line
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M6 2h4l2 5-2.5 1.5a12 12 0 006 6L17 12l5 2v4a2 2 0 01-2 2A18 18 0 012 4a2 2 0 012-2z"/></svg>
+        </a>
+        <a class="btn-ghost" href="#services">See the whole menu</a>
+      </div>
+
+      <dl class="hero-stats">
+        <div>
+          <dt>Google rating</dt>
+          <dd><strong>5.0</strong> <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></dd>
+        </div>
+        <div>
+          <dt>Honest reviews</dt>
+          <dd><strong>81</strong></dd>
+        </div>
+        <div>
+          <dt>Emergency line</dt>
+          <dd><strong>24/7</strong></dd>
+        </div>
+        <div>
+          <dt>Served since</dt>
+          <dd><strong>day one</strong></dd>
+        </div>
+      </dl>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Full-Service Irrigation</span><em>&#8226;</em>
+        <span>Start-Ups</span><em>&#8226;</em>
+        <span>Mid-Season Service</span><em>&#8226;</em>
+        <span>Winterization</span><em>&#8226;</em>
+        <span>Lawn Maintenance</span><em>&#8226;</em>
+        <span>Spring Clean-Ups</span><em>&#8226;</em>
+        <span>Fall Clean-Ups</span><em>&#8226;</em>
+        <span>Mulch &amp; Top Soil</span><em>&#8226;</em>
+        <span>Leveling</span><em>&#8226;</em>
+        <span>Gutter Cleaning</span><em>&#8226;</em>
+        <span>Snow Removal</span><em>&#8226;</em>
+        <span>Holiday Lights</span><em>&#8226;</em>
+        <span>Full-Service Irrigation</span><em>&#8226;</em>
+        <span>Start-Ups</span><em>&#8226;</em>
+        <span>Mid-Season Service</span><em>&#8226;</em>
+        <span>Winterization</span><em>&#8226;</em>
+        <span>Lawn Maintenance</span><em>&#8226;</em>
+        <span>Spring Clean-Ups</span><em>&#8226;</em>
+        <span>Fall Clean-Ups</span><em>&#8226;</em>
+        <span>Mulch &amp; Top Soil</span><em>&#8226;</em>
+        <span>Leveling</span><em>&#8226;</em>
+        <span>Gutter Cleaning</span><em>&#8226;</em>
+        <span>Snow Removal</span><em>&#8226;</em>
+        <span>Holiday Lights</span><em>&#8226;</em>
+      </div>
+    </div>
+
+    <section class="services" id="services">
+      <header class="section-head">
+        <span class="chapter">&#167; I. &#8212; the menu</span>
+        <h2>
+          <span>Eight things we do,</span>
+          <span class="soft">written plain.</span>
+        </h2>
+        <p>
+          No packages, no upsells. If it&#8217;s on this page we do it.
+          If it&#8217;s not, call us anyway &#8212; it&#8217;s probably still a yes.
+        </p>
+      </header>
+
+      <ol class="menu">
+        <li>
+          <span class="menu-n">01</span>
+          <div class="menu-body">
+            <h3>Full-Service Irrigation</h3>
+            <p>Start-ups in the spring, mid-season checks, winterization in
+            the fall, and repairs any time a head shears off.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">02</span>
+          <div class="menu-body">
+            <h3>Lawn Maintenance</h3>
+            <p>Weekly cuts, edging, blow-downs. Same crew every visit so
+            your yard isn&#8217;t a stranger to whoever&#8217;s holding the mower.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">03</span>
+          <div class="menu-body">
+            <h3>Spring &amp; Fall Clean-Ups</h3>
+            <p>Every last leaf, corner to corner. We bring our own tarps
+            and we do not stop until the lawn looks like it&#8217;s yours again.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">04</span>
+          <div class="menu-body">
+            <h3>Mulch, Top Soil &amp; Seed</h3>
+            <p>Fresh beds, fresh lawn, fair rates. Dark mulch, hardwood,
+            whatever you want &#8212; we&#8217;ll tell you what&#8217;ll actually last.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">05</span>
+          <div class="menu-body">
+            <h3>Leveling</h3>
+            <p>Bumps, ruts, sunken sod, low spots that pool after the rain
+            &#8212; flattened, topsoiled, reseeded.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">06</span>
+          <div class="menu-body">
+            <h3>Gutter Cleaning</h3>
+            <p>Two-story homes, garages, the weird old downspout that
+            wraps around the porch. All of it.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">07</span>
+          <div class="menu-body">
+            <h3>Snow Removal</h3>
+            <p>Walks, drives, whole commercial lots. Salted, cleared,
+            and done before your first coffee.</p>
+          </div>
+        </li>
+        <li>
+          <span class="menu-n">08</span>
+          <div class="menu-body">
+            <h3>Holiday Lights</h3>
+            <p>Installed on the eaves in November, maintained all season,
+            taken down when you&#8217;re tired of looking at them.</p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="footnote">
+        Not on the list? <a href="tel:+16316394510">Call anyway.</a>
+        If it lives outside, we probably handle it.
+      </p>
+    </section>
+
+    <section class="story" id="story">
+      <span class="chapter">&#167; II. &#8212; the crew</span>
+
+      <div class="story-inner">
+        <blockquote class="pullquote">
+          <span class="pq-mark" aria-hidden="true">&#8220;</span>
+          <p>We love what we do. When the customer is happy, <em>we are</em>.</p>
+          <cite>Chris &amp; Nykki, owners</cite>
+        </blockquote>
+
+        <div class="story-copy">
+          <h2>A husband-and-wife crew that still picks up the phone.</h2>
+          <p>
+            Strong Island started as a small crew of two and grew by word
+            of mouth. No call center, no gatekeepers. Call the number on
+            the trailer and you&#8217;ll get Nykki on the line or Chris on
+            the property, clipboard in hand, work boots laced.
+          </p>
+          <p>
+            We serve Suffolk County and the towns nearby. We treat every
+            yard like it&#8217;s our own &#8212; meticulous on clean-ups,
+            honest about what needs fixing, fair on price. That&#8217;s the
+            whole pitch. We think it&#8217;s enough.
+          </p>
+
+          <dl class="facts">
+            <div>
+              <dt>Owners</dt>
+              <dd>Chris &amp; Nykki</dd>
+            </div>
+            <div>
+              <dt>Territory</dt>
+              <dd>Suffolk Co. &amp; nearby</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Licensed &amp; insured</dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>Open 24, every day</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="voices" id="voices">
+      <header class="section-head align-left">
+        <span class="chapter">&#167; III. &#8212; word on the block</span>
+        <h2>
+          <span>Eighty-one reviews.</span>
+          <span class="soft">Perfect five stars.</span>
+        </h2>
+      </header>
+
+      <div class="notes">
+        <figure class="note">
+          <div class="note-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            Hands down the best landscapers I have ever used, and I have
+            hired many. Chris and his team are fast, professional, and
+            best of all &#8212; reliable.
+          </blockquote>
+          <figcaption>
+            <span class="sig">Marie deSoto</span>
+            <span class="note-job">Whole-yard clean-up &#183; weekly maintenance</span>
+          </figcaption>
+        </figure>
+
+        <figure class="note">
+          <div class="note-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            If you are looking for lawn care in the Suffolk area and
+            having a hard time finding someone you can trust &#8212; scroll
+            up and call this business. You can thank me later.
+          </blockquote>
+          <figcaption>
+            <span class="sig">Christopher Boehme</span>
+            <span class="note-job">Local Guide &#183; Google</span>
+          </figcaption>
+        </figure>
+
+        <figure class="note">
+          <div class="note-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            This is the happiest I have felt about my yard in years. After
+            two years of surgeries I couldn&#8217;t take it anymore and
+            called Strong Island. They saved it.
+          </blockquote>
+          <figcaption>
+            <span class="sig">Ralphie Willems</span>
+            <span class="note-job">Full yard rescue</span>
+          </figcaption>
+        </figure>
+
+        <figure class="note">
+          <div class="note-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            Chris came the same day in the rain and gave us a fair price.
+            Showed up as scheduled, no follow-up calls needed. That&#8217;s
+            rare.
+          </blockquote>
+          <figcaption>
+            <span class="sig">Dean Currao</span>
+            <span class="note-job">One-acre clean-up</span>
+          </figcaption>
+        </figure>
+
+        <figure class="note">
+          <div class="note-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            Chris went above and beyond on our new home. Honest about the
+            sprinkler system &#8212; he didn&#8217;t try to sell me on
+            anything I didn&#8217;t need.
+          </blockquote>
+          <figcaption>
+            <span class="sig">C.P.</span>
+            <span class="note-job">Sprinkler diagnostic</span>
+          </figcaption>
+        </figure>
+
+        <figure class="note">
+          <div class="note-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            Chris did an awesome job. Came right over, went out of his way
+            to clean out every little piece of our yard. Really great
+            company.
+          </blockquote>
+          <figcaption>
+            <span class="sig">Jackie Marie</span>
+            <span class="note-job">Fall clean-up</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reach" id="reach">
+      <span class="chapter light">&#167; IV. &#8212; reach us</span>
+
+      <h2 class="reach-title">
+        <span>Pick up the phone.</span>
+        <span class="soft">We&#8217;ll pick up too.</span>
+      </h2>
+
+      <a class="big-number" href="tel:+16316394510" aria-label="Call Strong Island at 631-639-4510">
+        <span>631</span><em>&#183;</em><span>639</span><em>&#183;</em><span>4510</span>
+      </a>
+
+      <div class="reach-facts">
+        <div>
+          <span class="rf-label">Hours</span>
+          <span class="rf-value">Open 24, every day</span>
+        </div>
+        <div>
+          <span class="rf-label">Area</span>
+          <span class="rf-value">Suffolk County &amp; nearby</span>
+        </div>
+        <div>
+          <span class="rf-label">Type</span>
+          <span class="rf-value">Residential &amp; commercial</span>
+        </div>
+        <div>
+          <span class="rf-label">Status</span>
+          <span class="rf-value">Licensed &amp; insured</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="colophon">
+    <div class="colophon-inner">
+      <div class="col-mark">
+        <svg class="col-drop" viewBox="0 0 80 100" aria-hidden="true">
+          <defs>
+            <clipPath id="drop-clip-f">
+              <path d="M40 4 C40 4, 6 50, 6 66 A34 34 0 0 0 74 66 C74 50, 40 4, 40 4Z"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#drop-clip-f)">
+            <rect width="80" height="100" fill="oklch(55% 0.14 148)"/>
+            <ellipse cx="40" cy="48" rx="32" ry="28" fill="oklch(62% 0.16 148)"/>
+            <ellipse cx="30" cy="42" rx="22" ry="18" fill="oklch(68% 0.18 148)"/>
+            <ellipse cx="50" cy="44" rx="16" ry="14" fill="oklch(72% 0.15 148)"/>
+            <path d="M6 68 Q20 60 40 70 T74 68 V100 H6Z" fill="oklch(42% 0.08 55)"/>
+            <path d="M6 76 Q30 68 54 78 T74 76 V100 H6Z" fill="oklch(52% 0.14 42)"/>
+            <circle cx="18" cy="82" r="3" fill="oklch(48% 0.06 55)"/>
+            <circle cx="28" cy="86" r="2.5" fill="oklch(46% 0.07 55)"/>
+            <circle cx="38" cy="83" r="3.5" fill="oklch(50% 0.05 55)"/>
+            <circle cx="50" cy="85" r="2" fill="oklch(44% 0.08 55)"/>
+          </g>
+          <path d="M40 4 C40 4, 6 50, 6 66 A34 34 0 0 0 74 66 C74 50, 40 4, 40 4Z" fill="none" stroke="oklch(55% 0.14 148)" stroke-width="3"/>
+        </svg>
+        <div>
+          <strong>Strong Island Landscaping &amp; Irrigation</strong>
+          <span>Full-service yard &amp; irrigation crew &#183; Suffolk Co, NY</span>
+        </div>
+      </div>
+      <div class="col-meta">
+        <span>&#169; <span id="year"></span> Strong Island Landscaping</span>
+        <span>Licensed &amp; Insured</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
