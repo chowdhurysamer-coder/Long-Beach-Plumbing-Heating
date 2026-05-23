@@ -75,19 +75,20 @@ u { text-decoration-color: var(--rust); text-underline-offset: 4px; text-decorat
 
 .mark {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: var(--space-sm);
   color: var(--paper);
   text-decoration: none;
 }
 .mark:hover { color: var(--paper); }
-.mark-glyph {
-  font-family: var(--slab);
-  font-size: 28px;
-  color: var(--leaf);
-  letter-spacing: -0.04em;
+.mark-drop {
+  width: 32px;
+  height: 40px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px oklch(20% 0.04 148 / 0.3));
+  transition: transform .2s;
 }
-.mark-amp { color: var(--sun); }
+.mark:hover .mark-drop { transform: scale(1.08); }
 .mark-word {
   font-family: var(--body);
   font-size: 11px;
@@ -704,13 +705,11 @@ u { text-decoration-color: var(--rust); text-underline-offset: 4px; text-decorat
   gap: var(--space-md);
   align-items: center;
 }
-.col-glyph {
-  font-family: var(--slab);
-  font-size: 36px;
-  color: var(--leaf);
-  letter-spacing: -0.04em;
+.col-drop {
+  width: 36px;
+  height: 45px;
+  flex-shrink: 0;
 }
-.col-glyph span { color: var(--sun); }
 .col-mark strong {
   font-family: var(--slab);
   font-size: 18px;
